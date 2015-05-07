@@ -1,0 +1,7 @@
+<h3>Enter your words</h3>
+<%= form_for @evaluate do |f| %>
+  <%= f.label :words %>
+  <%= f.text_field :words %>
+  <%= f.submit "Evaluate", evaluates_path %>
+<% end %>
+

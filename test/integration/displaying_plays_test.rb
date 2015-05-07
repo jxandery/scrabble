@@ -14,11 +14,11 @@ class DisplayingPlaysTest < ActionDispatch::IntegrationTest
     first_words.merge(last_words)
   end
 
-  def setup
-    all_words.keys.each do |word|
-      Play.create(:word => word)
-    end
-  end
+  #def setup
+    #all_words.keys.each do |word|
+      #Play.create(:word => word)
+    #end
+  #end
 
   def test_it_displays_only_three_previous_plays
     skip
@@ -34,4 +34,6 @@ class DisplayingPlaysTest < ActionDispatch::IntegrationTest
       end
     end
   end
+
+
 end
